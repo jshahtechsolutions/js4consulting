@@ -1,0 +1,65 @@
+.blog-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* horizontal scrolling for cards on small mobile screens */
+}
+
+.list-item {
+  min-width: 250px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.list-item.active {
+  border-color: #0070f3;
+  background-color: #f0f7ff;
+}
+
+.content-pane {
+  flex: 1;
+}
+
+.prose {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Desktop Upgrade Rules */
+@media (min-width: 768px) {
+  .blog-layout {
+    flex-direction: row; /* Split pane layout */
+    padding: 2rem;
+  }
+
+  .sidebar {
+    width: 320px;
+    border-bottom: none;
+    border-right: 1px solid #eee;
+    padding-bottom: 0;
+    padding-right: 1.5rem;
+  }
+
+  .article-list {
+    flex-direction: column; /* Vertical stack list */
+    overflow-x: visible;
+  }
+}

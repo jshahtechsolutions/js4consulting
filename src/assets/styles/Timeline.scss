@@ -1,43 +1,45 @@
-.vertical-timeline-element--work{
-    cursor: pointer;
+.vertical-timeline-element--work {
+  cursor: pointer;
 }
 
 
 .vertical-timeline span {
-    color: white;
-    font-family: 'Courier Prime', monospace;
+  color: white;
+  font-family: 'Courier Prime', monospace;
 }
 
 .vertical-timeline p {
-    color: rgb(39, 40, 34);
+  color: rgb(39, 40, 34);
 }
 
 .vertical-timeline-element p {
-    color: rgb(39, 40, 34);
+  color: rgb(39, 40, 34);
 }
 
 .vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
+  color: rgb(39, 40, 34);
 }
 
 .vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
+  color: rgb(39, 40, 34);
 }
 
 .vertical-timeline-element span {
-    color: rgb(39, 40, 34);
+  color: rgb(39, 40, 34);
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+  color: white;
 }
 
-.vertical-timeline-element-subtitle{
-    font-size: small;
+.vertical-timeline-element-subtitle {
+  font-size: small;
 }
+
 .svg-inline--fa {
-    color: white;
+  color: white;
 }
+
 // .vertical-timeline-element-read-more-badge {
 //     display: inline-block;
 //     margin-top: 10px;
@@ -60,7 +62,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Ensure it stays above the timeline nodes */
+  z-index: 9999;
+  /* Ensure it stays above the timeline nodes */
   padding: 1rem;
 }
 
@@ -73,7 +76,7 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.2s ease-out;
 }
 
@@ -83,13 +86,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .modal-header h2 {
   margin: 0;
   font-size: 1.5rem;
   color: #000;
+}
+
+.modal-content hr {
+  height: 5px;
+  width: 100%;
+  background: black;
 }
 
 .modal-subtitle {
@@ -99,8 +107,9 @@
   font-size: 0.9rem;
   display: block;
 }
+
 .underline-list {
-  list-style:square;
+  list-style: square;
   padding: 0;
   //margin: 1.5rem 0;
   display: flex;
@@ -116,8 +125,10 @@
 }
 
 .underline-list-item:last-child {
-  border-bottom: none; /* Safely kills final divider line */
+  border-bottom: none;
+  /* Safely kills final divider line */
 }
+
 .close-btn {
   background: none;
   border: none;
@@ -133,19 +144,24 @@
 
 /* Enable independent scrolling inside long articles */
 .modal-body {
-  padding: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   overflow-y: auto;
   font-size: 1.05rem;
   line-height: 1.75;
+  background:white;
 }
 
 @media screen and (max-width: 1170px) {
-    .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
-    }
-    .modal-content {
-    max-height: 95vh; /* Take up more space on tiny screens */
+  .vertical-timeline-element .vertical-timeline-element-date {
+    color: rgb(39, 40, 34);
   }
+
+  .modal-content {
+    max-height: 95vh;
+    /* Take up more space on tiny screens */
+  }
+
   .modal-header h2 {
     font-size: 1.2rem;
   }

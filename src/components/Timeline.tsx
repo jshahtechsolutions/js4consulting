@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss';
 
@@ -12,16 +12,16 @@ function Timeline() {
     date: string;
     location: string;
     description: string;
-    details:string[]
+    details: string[]
   }
 
   const careerPositions: careerPosition[] = [
     {
-      title :'Sr. Software Engineer',
+      title: 'Sr. Software Engineer',
       location: 'Social Security Administration, SSA, Woodlawn, MD',
       date: '2015 - present',
       description: 'Full-stack Web Development, PowerApps platform support and development, Automation and AI implementation',
-      details:[
+      details: [
         'Office of Disability Policy Management Information (ODPMI) — collects and analyzes management information on the disability program, including the Policy Feedback System (PFS), Request for Program Consultation (RPC), and Disability Research File Reporting System (DRFRS).',
         'Designed and built Power Apps (Canvas Apps) on top of SharePoint Online document libraries and lists, replacing manual, paper-based processes for end users',
         'Built Power Automate cloud flows for approvals and notifications, reducing manual processing time across business workflows',
@@ -38,11 +38,11 @@ function Timeline() {
       ]
     },
     {
-      title :'Software Consultant',
+      title: 'Software Consultant',
       location: 'Department of Labor Licensing and Regulation, DLLR, Baltimore, MD',
       date: '2014 - 2015',
       description: 'Asp.Net Web Development, MSSQL Database development',
-      details:[
+      details: [
         'Gathered requirements and designed a client validation application (ClickOnce) for employer wage and contribution file generation',
         'Developed VB.NET applications with SQL stored procedures, SSIS packages, and SSRS reports; built interfaces for third-party API calls',
         'Replaced legacy systems with ASP.NET MVC, Entity Framework, and Web API-based SPAs using jQuery/AJAX',
@@ -50,21 +50,21 @@ function Timeline() {
       ]
     },
     {
-      title :'Sr. Software Engineer',
+      title: 'Sr. Software Engineer',
       location: 'RxNT, Annapolis, MD',
       date: '2013 - 2014',
       description: 'Twilio API integration, SPA Web Apps Development',
-      details:[
+      details: [
         'Designed and implemented a Twilio API integration for patient appointment reminders',
         'Built a single-page application (MVC 4.0) for the WalGreens MedGap project with a responsive AngularJS UI, .NET Web API middle layer, and Entity Framework data layer '
       ]
     },
     {
-      title :'Software Developer',
+      title: 'Software Developer',
       location: 'Maryland State Motor Vehicle Administration, MVA, Glen Burnie, MD',
       date: '2009 - 2013',
       description: 'Legacy application conversion to modern development framework, WCF Service Development',
-      details:[
+      details: [
         'Refactored C# code to reduce cyclomatic complexity; modified WCF services integrating Mainframe and POS systems',
         'Designed the architecture for converting a legacy VB COM system to WPF/WCF using the MVVM pattern',
         'Built .NET wrapper classes to interoperate with existing VB COM objects; hosted new WCF services in a Windows environment',
@@ -100,26 +100,27 @@ function Timeline() {
           ))}
         </VerticalTimeline>
         {isOpen && activePosition && (
-        <div className="modal-overlay" onClick={() => setIsOpen(false)}>
-          {/* StopPropagation prevents clicking inside the article from closing it */}
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <header className="modal-header">
-              <h2>{activePosition.title}</h2>
-              <button className="close-btn" onClick={() => setIsOpen(false)}>&times;</button>
-            </header>
-            <h3 className="modal-subtitle">{activePosition.location}</h3>
-            <main className="modal-body prose">
-               <ul className="underline-list">
+          <div className="modal-overlay" onClick={() => setIsOpen(false)}>
+            {/* StopPropagation prevents clicking inside the article from closing it */}
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <header className="modal-header">
+                <h2>{activePosition.title}</h2>
+                <button className="close-btn" onClick={() => setIsOpen(false)}>&times;</button>
+              </header>
+              <h3 className="modal-subtitle">{activePosition.location}</h3>
+              <hr></hr>
+              <main className="modal-body prose">
+                <ul className="underline-list">
                   {activePosition.details.map((item, index) => (
                     <li key={index} className="underline-list-item">
                       {item}
                     </li>
                   ))}
-              </ul>
-            </main>
+                </ul>
+              </main>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
     </div>
   );

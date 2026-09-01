@@ -1,24 +1,7 @@
----
-title: "Turn Copilot Studio Prompts into a Document Extraction Service"
-description: "A practical Power Automate workaround for extracting text from SharePoint document attachments using Copilot Studio Prompts with Code Interpreter."
-date: "2026-08-05"
-author: "Your Name"
-tags:
-  - Copilot Studio
-  - Power Automate
-  - SharePoint
-  - Document Extraction
-  - Power Platform
-  - Microsoft 365
-  - AI Automation
-  - Code Interpreter
----
-
 # ✨ Turn Copilot Studio Prompts into a Document Extraction Service
 
 > A practical workaround for extracting text from SharePoint document attachments in Power Automate when AI Builder document processing is not available.
 
-![Document extraction workflow diagram](/images/copilot-studio-document-extraction-workflow.png)
 
 ---
 

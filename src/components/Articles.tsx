@@ -10,8 +10,9 @@ import mock08 from '../assets/images/mock08.png';
 import mock09 from '../assets/images/mock09.png';
 import mock10 from '../assets/images/mock10.png';
 import cpDocExtract from '../assets/images/articles/cpDocExtract.png';
+import myMarkdownFileUrl from '../mdDocs/cpDocExtract.md'; // Normal import
 import '../assets/styles/Articles.scss';
-
+import JCMarkDown from '../components/JCMarkDown';
 function Articles() {
     return(
         <div className="articles-container" id="articles">
@@ -21,9 +22,7 @@ function Articles() {
                     <img src={cpDocExtract} className="zoom" alt="thumbnail" width="100%"/>
                 </div>
                 <div className="article">
-                    <h2>Turn Copilot Studio Prompts into a Document Extraction Service</h2>
-                    <p>A practical workaround for extracting text from SharePoint document attachments in Power Automate when AI Builder document processing is not available..</p>
-                    <p>Copilot Studio | Power Automate | SharePoint | Document Extraction | Power Platform | Microsoft 365 | AI Automation | Code Interpreter</p>
+                    <JCMarkDown filePath={myMarkdownFileUrl} />
                 </div>
             </div>
         </div>

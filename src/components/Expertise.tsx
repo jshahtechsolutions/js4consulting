@@ -71,7 +71,7 @@ function Expertise() {
                         <li>Rigorous testing with Unit testing and integration testing.</li>
                     </ul>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tech Stack:</span>
                         {fullStackDevelopment.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -92,7 +92,7 @@ function Expertise() {
                         <li>Exposure with automated deployment scripts and execution.</li>
                     </ul>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tech Stack:</span>
                         {labelCloud.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -122,7 +122,7 @@ function Expertise() {
                         <li>Full automation development for deployment scripts and execution.</li>
                     </ul>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tech Stack:</span>
                         {labelPowerPlatform.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -147,7 +147,7 @@ function Expertise() {
                     <h3>GenAI Development</h3>
                     <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tech Stack:</span>
                         {labelAI.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}

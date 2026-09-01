@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "New Manager Selfreview",
+    "description": "A full-featured online store with secure checkout and user dashboards.",
+    "role": "Lead Frontend Developer",
+    "technologies": [
+      "React",
+      "HTML5",
+      "Tailwind CSS",
+      "Redux"
+    ],
+    "screenshots": [
+      {"img":"js4consulting/NMSR/NMSR-1.png","discription":""},
+      {"img":"js4consulting/NMSR/NMSR-2.png","discription":""},
+      {"img":"js4consulting/NMSR/NMSR-3.png","discription":""},
+      {"img":"js4consulting/NMSR/NMSR-4.png","discription":""}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Task Analytics Dashboard",
+    "description": "A real-time productivity app visualizing team velocity and task distributions.",
+    "role": "Full Stack Developer",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Chart.js",
+      "MongoDB"
+    ],
+    "screenshots": [
+      {"img":"../assets/images//project2-1.png","discription":""}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "E-Commerce Platform",
+    "description": "A full-featured online store with secure checkout and user dashboards.",
+    "role": "Lead Frontend Developer",
+    "technologies": [
+      "React",
+      "HTML5",
+      "Tailwind CSS",
+      "Redux"
+    ],
+    "screenshots": [
+      {"img":"../assets/images//project1-1.png","discription":""},
+      {"img":"../assets/images//project1-2.png","discription":""}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Task Analytics Dashboard",
+    "description": "A real-time productivity app visualizing team velocity and task distributions.",
+    "role": "Full Stack Developer",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Chart.js",
+      "MongoDB"
+    ],
+    "screenshots": [
+      {"img":"../assets/images//project2-1.png","discription":""}
+    ]
+  }
+]

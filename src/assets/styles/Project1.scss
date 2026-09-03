@@ -6,7 +6,7 @@
     padding: 1rem 1rem;
     max-width: 100%;
     //margin: 0 auto;
-    border: 5px solid var(--border-color, red);
+    //border: 5px solid var(--border-color, red);
 
     h2 {
         font-size: 2.2rem;
@@ -47,6 +47,43 @@
         background-color: var(--card-bg, #fff);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
+        .project-header-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+            transition: color 0.2s ease;
+
+            h3 {
+            margin: 0;
+            font-size: 1.6rem;
+            color: var(--text-heading, #111);
+            border-bottom: 1px solid transparent;
+            }
+
+            .info-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--text-muted, #777);
+            transition: color 0.2s ease, transform 0.2s ease;
+            }
+
+            // Hover effect styles title as a dynamic hyperlink
+            &:hover {
+            color: var(--primary-color, #0070f3);
+
+            h3 {
+                color: var(--primary-color, #0070f3);
+                border-bottom-color: var(--primary-color, #0070f3);
+            }
+
+            .info-icon {
+                color: var(--primary-color, #0070f3);
+                transform: scale(1.1);
+            }
+            }
+        }
         h3 {
             margin-top: 0;
             font-size: 1.6rem;
@@ -84,6 +121,34 @@
                 font-size: 0.8rem;
                 font-weight: 600;
             }
+            .info-trigger-btn {
+                margin-top: 1.5rem;
+                width: 100%;
+                padding: 0.75rem;
+                background-color: var(--primary-color, #0070f3); // Uses theme color fallback
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                transition: background-color 0.2s ease, transform 0.1s ease;
+
+                &:hover {
+                background-color: var(--primary-hover-color, #0051a8);
+                }
+                &:active {
+                transform: scale(0.98);
+                }
+
+                .icon {
+                font-size: 1.1rem;
+                }
+            }
+
         }
 
         /* 🖼️ Slideshow Layout Styles */

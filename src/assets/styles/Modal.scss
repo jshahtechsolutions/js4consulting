@@ -1,0 +1,184 @@
+.project-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 1rem;
+  animation: fadeInModal 0.2s ease-out;
+
+  .project-modal-content {
+    background-color: var(--card-bg, #fff);
+    color: var(--text-color, #333);
+    width: 100%;
+    max-width: 850px;
+    max-height: 90vh;
+
+    /* 🎨 Explicit Corner Correction Rules */
+    border-radius: 16px !important;
+    overflow: hidden !important; // 🌟 Clips scrollbars escaping past edges
+
+    padding: 2.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column; // Changes layout flow to manage header vs body
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+    // This internal wrapper isolate scrolling so your main corners stay clean and rounded
+    & {
+        overflow-y: auto;
+        border-radius: 16px !important; // Forces corner mask on the sub-scroll wrapper
+    }
+
+    h2 { margin: 0 0 0.25rem 0; font-size: 2rem; color: var(--text-heading, #111); }
+    .modal-role { margin-bottom: 1.5rem; color: var(--text-muted, #666); font-size: 1rem; }
+
+    .close-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 1.5rem;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted, #888);
+      z-index: 10;
+      &:hover { color: var(--text-heading, #111); }
+    }
+
+    /* 🌟 The Scroller Layer: Isolates overflow movements away from the main radius */
+    .modal-scroll-body {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto; // 🌟 Moves scrolling functionality here
+      padding-left: .5rem;  // Keeps the clean margins spacing around elements
+      padding-right: .5rem;  // Keeps the clean margins spacing around elements
+
+      // Sleek scrollbar styling that follows the layout track curves smoothly
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb, #ccc);
+        border-radius: 10px;
+      }
+
+      h2 { margin: 0 0 0.25rem 0; font-size: 2rem; color: var(--text-heading, #111); }
+      .modal-role { margin-bottom: 1.5rem; color: var(--text-muted, #666); font-size: 1rem; }
+    }
+
+    .modal-text-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .info-block {
+        h4 { margin: 0 0 0.5rem 0; font-size: 1.1rem; color: var(--text-heading, #222); border-bottom: 2px solid var(--border-color, #eee); padding-bottom: 0.25rem; }
+        p { margin: 0; line-height: 1.5; font-size: 0.95rem; color: var(--text-main, #444); }
+
+        /* ✨ Stylized Feature Bullet Counter Blocks */
+        .stylized-features {
+          list-style: none; // Disables standard black dots
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 0.6rem;
+
+          li {
+            position: relative;
+            padding-left: 1.5rem;
+            line-height: 1.5;
+            font-size: 0.95rem;
+            color: var(--text-main, #444);
+
+            // Renders custom layout accents next to each text segment
+            &::before {
+              content: "#"; // Customize to a custom element dash if desired
+              position: absolute;
+              left: 0;
+              color: var(--primary-color, #000); // Custom project theme accent color
+              font-weight: normal;
+            }
+          }
+        }
+      }
+
+      .modal-tech-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        .m-badge { background: var(--badge-bg, #f0f0f0); color: var(--badge-text, #333); padding: 0.25rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; }
+      }
+    }
+
+    .modal-full-width-carousel {
+      h4 { margin: 0 0 0.75rem 0; font-size: 1.1rem; color: var(--text-heading, #222); border-bottom: 2px solid var(--border-color, #eee); padding-bottom: 0.25rem; }
+
+      .modal-slideshow {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        .image-wrapper {
+          position: relative;
+          width: 100%;
+          height: 380px;
+          background: #000;
+          border-radius: 8px;
+          overflow: hidden;
+
+          @media (max-width: 576px) { height: 220px; }
+
+          img { width: 100%; height: 100%; object-fit: contain; }
+
+          .slide-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            font-size: 1.5rem;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover { background: rgba(0, 0, 0, 0.8); }
+            &.prev { left: 15px; }
+            &.next { right: 15px; }
+          }
+        }
+
+        .image-caption { font-size: 0.85rem; color: var(--text-muted, #666); font-style: italic; margin: 0; text-align: center; }
+
+        .carousel-dots {
+          display: flex;
+          justify-content: center;
+          gap: 0.4rem;
+          .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: background 0.2s;
+            &.active { background: var(--text-heading, #333); }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

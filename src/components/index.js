@@ -9,3 +9,5 @@ export { default as Articles } from "./Articles";
 //export { default as ArticleFeed } from "./ArticleFeed";
 export { default as Contact } from "./Contact";
 export { default as JCMarkDown } from "./JCMarkDown";
+export { default as ClientCarousel } from "./ClientCarousel";
+export { default as Education } from "./Education";

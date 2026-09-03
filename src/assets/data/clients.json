@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Social Security administration (SSA)",
+        "logo": "js4consulting/logos/ssa.png"
+    },
+    {
+        "id": 2,
+        "title": "Department of labor licensing and regulation (DLLR)",
+        "logo": "js4consulting/logos/DLLR.jpg"
+    },
+    {
+        "id": 3,
+        "title": "RXNT",
+        "logo": "js4consulting/logos/RXNT.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Maryland Motor Vehicle Administration (MVA)",
+        "logo": "js4consulting/logos/MVA.png"
+    },
+    {
+        "id": 5,
+        "title": "Verizon Communication",
+        "logo": "js4consulting/logos/Verizon.png"
+    },
+    {
+        "id": 6,
+        "title": "Court Services and Offender Supervision Agency",
+        "logo": "js4consulting/logos/CSOSA.png"
+    },
+    {
+        "id": 7,
+        "title": "U.S.Patent and Trademark Office (USPTO)",
+        "logo": "js4consulting/logos/USPTO.png"
+    }
+]

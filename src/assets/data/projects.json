@@ -1,58 +1,85 @@
 [
   {
     "id": 1,
-    "title": "New Manager Selfreview",
-    "description": "A full-featured online store with secure checkout and user dashboards.",
-    "role": "Lead Frontend Developer",
+    "title": "New Manager Self-Review",
+    "description": "The purpose of the New Manager Self-Review (NMSR) is to provide newly appointed managers with a structured approach to familiarizing themselves with their new responsibilities. ",
+    "details": "The purpose of the New Manager Self-Review (NMSR) is to provide newly appointed managers with a structured approach to familiarizing themselves with their new responsibilities. The NMSR serves as a valuable tool in acclimating to the intricacies of the office environment. Through this process, managers will gain insights into the operations, strengths, and areas for improvement within their office. This comprehensive review process is designed to help them gain a deep understanding of the office they are now in charge of. By delving into the various workloads and identifying the individuals responsible for specific work, new managers will be better prepared with the knowledge needed to manage their office effectively. The NMSR application is designed to house the NMSR data and MI data online. This centralized platform ensures that managers have easy access to essential information, enabling them to make informed decisions and oversee operations efficiently. ",
     "technologies": [
-      "React",
-      "HTML5",
-      "Tailwind CSS",
-      "Redux"
+      "Powe Apps",
+      "Power Automate",
+      "Sharepoint",
+      "Azure",
+      "Copilot Studio",
+      "TableAu"
+    ],
+    "features":[
+      "Role based security",
+      "Fiscal Year changes automation",
+      "Tableau reports integration",
+      "Administrate functionality",
+      "Azure Documnet Intelligence",
+      "AI Agent and Power Automate Integration"
     ],
     "screenshots": [
-      {"img":"js4consulting/NMSR/NMSR-1.png","discription":""},
-      {"img":"js4consulting/NMSR/NMSR-2.png","discription":""},
-      {"img":"js4consulting/NMSR/NMSR-3.png","discription":""},
-      {"img":"js4consulting/NMSR/NMSR-4.png","discription":""}
+      {"img":"js4consulting/NMSR/NMSR-1.png","discription":"This is main image"},
+      {"img":"js4consulting/NMSR/NMSR-2.png","discription":"This is secondary image"},
+      {"img":"js4consulting/NMSR/NMSR-3.png","discription":"This is main image"},
+      {"img":"js4consulting/NMSR/NMSR-4.png","discription":"This is main image"}
     ]
   },
   {
     "id": 2,
-    "title": "Task Analytics Dashboard",
-    "description": "A real-time productivity app visualizing team velocity and task distributions.",
-    "role": "Full Stack Developer",
+    "title": "RSF Leave Calculator",
+    "description": "Rostered Staff Factor (RSF) calculator which aids the National 800 Number Network in determining allowable leave allocations in conjunction with their six-month leave planning process.",
+    "details": "Rostered Staff Factor (RSF) calculator which aids the National 800 Number Network in determining allowable leave allocations in conjunction with their six-month leave planning process. The purpose of measuring staff using the agency's defined method of Rostered Staff Factor, is to measure the productive phone time or productive agent phone hours against total staff count or total possible hours. It calculates all kind of differnt matrix to determine the efficiency and avaiability of resources",
     "technologies": [
-      "React",
-      "Node.js",
-      "Chart.js",
-      "MongoDB"
+      "Powe Apps",
+      "Power Automate",
+      "Sharepoint"
+    ],
+    "features":[
+      "Role based security",
+      "Mid Fiscal Year Data setup with automation",
+      "Administrate functionality"
     ],
     "screenshots": [
-      {"img":"../assets/images//project2-1.png","discription":""}
+      {"img":"js4consulting/RSF/RSF-1.png","discription":"Home screen where eligible user can access their site for planning leave for a current fiscal year."},
+      {"img":"js4consulting/RSF/RSF-2.png","discription":"Input data screen for Baltimore site, where user plans their leave. Based on permission for different site, screen access has been determined"},
+      {"img":"js4consulting/RSF/RSF-3.png","discription":"Input data screen for Detroit site, also shows collpasbale panel for mont selection."},
+      {"img":"js4consulting/RSF/RSF-4.png","discription":"This screen manages users (Add/Delete/Edit), behind the seen, it manages permissions of the user based on Site Access and Access Type selected."}
     ]
   },
-  {
+{
     "id": 3,
-    "title": "E-Commerce Platform",
-    "description": "A full-featured online store with secure checkout and user dashboards.",
-    "role": "Lead Frontend Developer",
+    "title": "Policy Feedback System (PFS)",
+    "description": "PFS is a web-based application developed by the Office of Decision Support and Strategic Information (ODSSI) that contains records since 2007 on more than 100 million electronic disability claims from the DDS, OHO, and FO levels",
+    "details": "The Policy Feedback System (PFS) is a web application developed by the Decision Support and Strategic Information Team (DSSIT) that gathers empirical data from individual disability claims to identify policy issues, recommend training, and prioritize workloads. Reports created in PFS are not official MI which suggests some discretion in its use. Therefore, access is limited to administrative, managerial, quality, and training support staff. For security purposes, access is suspended for any user that has not used the application to create a report for twelve consecutive months.Users of PFS can review data and create custom reports based on claimant characteristics, geography, policy, and other factors.  PFS functionality includes: Over 105 report types including mapping and other graphic functions to display empirical data; Statistical analytics such as average, range, and standard deviation; Drill down capability to individual cases, exporting and reporting features, and direct access to the electronic folders, the Request for Program Consultation site, and OHO’s Case Processing and Management System (CPMS); and Availability to users throughout SSA, including Headquarters, Regional Offices, DDSs, FOs, OHO, and OQR.",
     "technologies": [
-      "React",
-      "HTML5",
-      "Tailwind CSS",
-      "Redux"
+      ".Net Core Framework",
+      "SQL Server",
+      ".Net Core WebAPI",
+      "MVC, WebApps, React, NodeJs",
+      "PowerBI"
+    ],
+    "features":[
+      "Azure AD Security",
+      "Dependency Injection",
+      "Entity framework implementation",
+      "Async programming"
     ],
     "screenshots": [
-      {"img":"../assets/images//project1-1.png","discription":""},
-      {"img":"../assets/images//project1-2.png","discription":""}
+      {"img":"js4consulting/PFS/PFS-Home.png","discription":"Home screen is kind of dashboard that navigates to different pages, reports, sub application."},
+      {"img":"js4consulting/PFS/PFS-Reportfilter.png","discription":"Common wizard filter page where user can filter particular report with different parameters for a specific entities."},
+      {"img":"js4consulting/PFS/PFS-AllowanceRates.png","discription":"National allowance percentages are displayed on the map through this page. Clicking on a state allows information for that particular state to appear below the national data."},
+      {"img":"js4consulting/PFS/PFS-Outlier.png","discription":"Outlier report identifies disability allownace rates that are signifcally higher or lower rates from most of the allowance rates within that application."},
+      {"img":"js4consulting/PFS/PFS-PowerBI.png","discription":"Plocy Analysis Reports, PowerBI reports, that allows to compare initial level data sets with different filters before ad after policy change."}
     ]
   },
   {
     "id": 4,
     "title": "Task Analytics Dashboard",
     "description": "A real-time productivity app visualizing team velocity and task distributions.",
-    "role": "Full Stack Developer",
+
     "technologies": [
       "React",
       "Node.js",

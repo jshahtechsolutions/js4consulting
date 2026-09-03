@@ -1,0 +1,25 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "degree": "Master of Science in Computer Science",
+      "institution": "University of Bridgeport, Bridgeport, CT, USA",
+      "duration": "1999 - 2002"
+    },
+    {
+      "id": 2,
+      "degree": "Bachelor in Electrical Engineering",
+      "institution": "M.S.University, Faculty of Technology and Engineering, Vadodara, India",
+      "duration": "1995 - 1999"
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "title": "Microsoft Certified: Azure AI Fundamentals",
+      "issuer": "Microsoft",
+      "date": "July 2025",
+      "credentialUrl": "https://learn.microsoft.com/api/credentials/share/en-us/JigneshShah-0834/DBB3CDF01DD00632?sharingId=E1606C16B7CC25D9"
+    }
+  ]
+}

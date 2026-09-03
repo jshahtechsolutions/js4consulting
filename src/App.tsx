@@ -11,6 +11,7 @@ import {
     Navigation,
     Footer,
     JCMarkDown,
+    Education
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
@@ -37,6 +38,7 @@ function App() {
                 <Expertise />
                 <Timeline />
                 <Project1 />
+                <Education />
                 <Articles />
                 {/* <ArticleFeed/> */}
                 <Contact />

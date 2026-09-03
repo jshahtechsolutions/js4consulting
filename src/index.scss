@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
 }
 
 code {
@@ -86,11 +86,12 @@ p, a, h1, h2, h3, h4, h5, label, button, ul, li, hr {
 
 .items-container {
   padding-left: 10%;
+  padding-right: 10%;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //border: 5px solid var(--border-color, green);
+  border: 5px solid var(--border-color, green);
 }
 
 .light-mode {

@@ -1,27 +1,30 @@
 .skills-container {
-    //padding: 5% 10%;
     padding-left: 10%;
     padding-right: 10%;
-    //padding-top: 5%;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    justify-content: center;
+    //border: 1px solid var(--border-color, blue);
     svg {
         color: white;
     }
+    font-size:.8rem;
 }
 
 .skills-container .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
+    grid-gap: 10px;
 }
 
 .skills-container .skills-grid .skill {
     align-items: center;
+    padding-top: .5rem;
     text-align: left;
-    border-color: aqua;
-    border: 10px;
+    border-radius: 12px;
+    box-shadow: 10px 12px 30px rgba(0, 0, 0, 0.08);
+    //border: 1px solid var(--border-color,black);
 }
 
 .skill h3{
@@ -35,7 +38,7 @@
     color: rgb(39, 40, 34) !important;
     background-color: white !important;
     font-size: 0.8rem !important;
-    height: 25px !important;
+    height: 20px !important;
 
     span {
         font-family: 'Courier Prime', monospace;
@@ -50,6 +53,8 @@
 .flex-chips {
     line-height: 2;
     margin: 0.5;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
 
     .chip-title {
         color: white;

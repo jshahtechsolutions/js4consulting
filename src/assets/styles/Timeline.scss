@@ -1,5 +1,18 @@
+.timeline-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vertical-timeline-element{
+  //background-color: antiquewhite;
+  box-shadow: 10px 12px 30px rgba(0, 0, 0, 0.08);
+}
 .vertical-timeline-element--work {
   cursor: pointer;
+  //background-color: brown;
 }
 
 
@@ -14,14 +27,17 @@
 
 .vertical-timeline-element p {
   color: rgb(39, 40, 34);
+//  color: red;
 }
 
 .vertical-timeline-element h3 {
   color: rgb(39, 40, 34);
+  // color:green;
 }
 
 .vertical-timeline-element h4 {
   color: rgb(39, 40, 34);
+  //color:blue
 }
 
 .vertical-timeline-element span {
@@ -29,7 +45,8 @@
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
-  color: white;
+  //color: white;
+  color:antiquewhite
 }
 
 .vertical-timeline-element-subtitle {
@@ -40,17 +57,6 @@
   color: white;
 }
 
-// .vertical-timeline-element-read-more-badge {
-//     display: inline-block;
-//     margin-top: 10px;
-//     padding: 5px 10px;
-//     background-color: #0070f3;
-//     color: white;
-//     border-radius: 4px;
-//     font-size: 0.9rem;
-//     cursor: pointer;
-//     transition: background-color 0.3s ease;
-// }
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -95,9 +101,9 @@
 }
 
 .modal-content hr {
-  height: 5px;
+  height: 2px;
   width: 100%;
-  background: black;
+  background: gray;
 }
 
 .modal-subtitle {
@@ -165,4 +171,17 @@
   .modal-header h2 {
     font-size: 1.2rem;
   }
+}
+@media screen {
+    @media (max-width: 768px) {
+        .timeline-container {
+            display: block;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+
+    @media (max-width: 567px) {
+
+    }
 }

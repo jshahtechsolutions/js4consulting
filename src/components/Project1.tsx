@@ -18,16 +18,18 @@ import ClientCarousel from './ClientCarousel';
         </div>*/
 function Project() {
     return (
-        <div id="projects" className="items-container">
-
-                <h1>Projects</h1> <ClientCarousel />
-                <section id="projects" className="projects-section">
+        <div id="projects">
+            <div className="projects-container">
+                <h1>Projects</h1>
+                <ClientCarousel />
+                <section className="projects-section">
                     <div className="projects-grid">
                         {projectsData.map((project) => (
                             <ProjectCard key={project.id} project={project} />
                         ))}
                     </div>
                 </section>
+            </div>
         </div>
     );
 }

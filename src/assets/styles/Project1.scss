@@ -2,6 +2,16 @@
 // Replace this path with the actual location of your global variables file (e.g., variables.scss).
 // @import '../styles/variables.scss';
 
+.projects-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //border: 5px solid var(--border-color, rgb(0, 255, 34));
+}
 .projects-section {
     padding: 1rem 1rem;
     max-width: 100%;
@@ -20,7 +30,7 @@
         // display: grid;
         // grid-template-columns: 1fr;
         // gap: 2rem;
-
+        cursor: pointer;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 50px;
@@ -238,5 +248,20 @@
                 }
             }
         }
+    }
+}
+
+
+@media screen {
+    @media (max-width: 768px) {
+        .projects-container {
+            display: block;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+
+    @media (max-width: 567px) {
+
     }
 }

@@ -30,7 +30,8 @@ const labelCloud = [
     "GitHub Actions",
     "Docker",
     "Azure",
-    "Linux"
+    "Linux",
+    "Bicep"
 ];
 
 const labelAI = [
@@ -51,7 +52,7 @@ const labelPowerPlatform = [
 
 function Expertise() {
     return (
-    <div className="container" id="expertise">
+    <div id="expertise">
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
@@ -88,7 +89,7 @@ function Expertise() {
                     </div>
                     <h3>DevOps & Automation</h3>
                     <ul>
-                        <li>Strong hands on Azure Deployments using CI/CD developments, Git Actions.</li>
+                        <li>Strong hands on Azure Deployments using CI/CD developments, Git Actions, Infrastructure as a code (Bicep).</li>
                         <li>Exposure with automated deployment scripts and execution.</li>
                     </ul>
                     <div className="flex-chips">
@@ -118,8 +119,8 @@ function Expertise() {
                     </div>
                     <h3>Power Platform</h3>
                     <ul>
-                        <li>Strong hand on Azure Deployments using CI/CD developments, Git Actions.</li>
-                        <li>Full automation development for deployment scripts and execution.</li>
+                        <li>Canvas apps with SharPoint and Dataverse Development.</li>
+                        <li>Integration of automation flow using agentic workflows with Copilot studio.</li>
                     </ul>
                     <div className="flex-chips">
                         <span className="chip-title">Tech Stack:</span>
@@ -145,8 +146,10 @@ function Expertise() {
                         />
                     </div>
                     <h3>GenAI Development</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
+                    <ul>
+                        <li>Document extration devleopment with Azure AI services.</li>
+                        <li>Integrate AI-Automation with Python and .Net libraries</li>
+                    </ul><div className="flex-chips">
                         <span className="chip-title">Tech Stack:</span>
                         {labelAI.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />

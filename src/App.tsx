@@ -3,21 +3,21 @@ import {
     Main,
     Timeline,
     Expertise,
-    Project,
+    //Project,
     Project1,
     Articles,
     // ArticleFeed,
-    Contact,
+    //Contact,
     Navigation,
     Footer,
-    JCMarkDown,
+    //JCMarkDown,
     Education
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
 function App() {
     const [mode, setMode] = useState<string>('dark');
-    const [content, setContent] = useState<string>('');
+    //const [content, setContent] = useState<string>('');
     const handleModeChange = () => {
         if (mode === 'dark') {
             setMode('light');
@@ -40,8 +40,6 @@ function App() {
                 <Project1 />
                 <Education />
                 <Articles />
-                {/* <ArticleFeed/> */}
-                <Contact />
             </FadeIn>
             <Footer />
         </div>

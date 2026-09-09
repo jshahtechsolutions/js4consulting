@@ -21,17 +21,27 @@
     },
     {
         "id": 5,
-        "title": "Verizon Communication",
-        "logo": "js4consulting/logos/Verizon.png"
+        "title": "Basys",
+        "logo": "js4consulting/logos/basys.png"
     },
     {
         "id": 6,
-        "title": "Court Services and Offender Supervision Agency",
-        "logo": "js4consulting/logos/CSOSA.png"
+        "title": "W.R.Grace",
+        "logo": "js4consulting/logos/grace.jpg"
     },
     {
         "id": 7,
         "title": "U.S.Patent and Trademark Office (USPTO)",
         "logo": "js4consulting/logos/USPTO.png"
+    },
+    {
+        "id": 8,
+        "title": "Court Services and Offender Supervision Agency",
+        "logo": "js4consulting/logos/CSOSA.png"
+    },
+    {
+        "id": 9,
+        "title": "Verizon Communication",
+        "logo": "js4consulting/logos/Verizon.png"
     }
 ]

@@ -1,3 +1,11 @@
+.education-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .education-section {
     padding-left: 10%;
     padding-right: 10%;
@@ -40,29 +48,29 @@
         margin-left: 0.5rem;
 
         .timeline-item {
-        position: relative;
+            position: relative;
 
-        &::before {
-            content: '';
-            position: absolute;
-            left: calc(-1.5rem - 6px);
-            top: 4px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: var(--primary-color, #0070f3);
-            border: 2px solid var(--card-bg, #fff);
-        }
+            &::before {
+                content: '';
+                position: absolute;
+                left: calc(-1.5rem - 6px);
+                top: 4px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: var(--primary-color, #0070f3);
+                border: 2px solid var(--card-bg, #fff);
+            }
 
-        .date-tag {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-muted, #777);
-        }
+            .date-tag {
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: var(--text-muted, #777);
+            }
 
-        h4 { margin: 0.25rem 0 0 0; font-size: 1.15rem; color: var(--text-heading, #111); }
-        h5 { margin: 0.15rem 0 0.5rem 0; font-size: 0.95rem; color: var(--text-muted, #555); font-weight: 500; }
-        p { margin: 0; font-size: 0.95rem; color: var(--text-main, #444); line-height: 1.4; }
+            h4 { margin: 0.25rem 0 0 0; font-size: 1.15rem;}// color: var(--text-heading, #111); }
+            h5 { margin: 0.15rem 0 0.5rem 0; font-size: 0.95rem;font-weight: 500;}// color: var(--text-muted, #555);} }
+            p { margin: 0; font-size: 0.95rem; color: var(--text-main, #444); line-height: 1.4; }
         }
     }
 

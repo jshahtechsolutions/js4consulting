@@ -4,19 +4,19 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import List from '@mui/material/List';
-import ListIcon from '@mui/icons-material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+// import Divider from '@mui/material/Divider';
+// import Drawer from '@mui/material/Drawer';
+// import List from '@mui/material/List';
+// import ListIcon from '@mui/icons-material/List';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemButton from '@mui/material/ListItemButton';
+// import ListItemText from '@mui/material/ListItemText';
 
-const drawerWidth = 240;
+//const drawerWidth = 240;
 const navItems = [['Expertise', 'expertise'], ['Career', 'history'], ['Projects', 'projects'],['Education', 'education'],['Articles', 'articles']];//, ['Contact', 'contact']];
 
 function Navigation({parentToChild, modeChange}: any) {
@@ -57,21 +57,21 @@ function Navigation({parentToChild, modeChange}: any) {
     }
   };
 
-  const drawer = (
-    <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Menu</p>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
-              <ListItemText primary={item[0]} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
+  // const drawer = (
+  //   <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+  //     <p className="mobile-menu-top"><ListIcon/>Menu</p>
+  //     <Divider />
+  //     <List>
+  //       {navItems.map((item) => (
+  //         <ListItem key={item[0]} disablePadding>
+  //           <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+  //             <ListItemText primary={item[0]} />
+  //           </ListItemButton>
+  //         </ListItem>
+  //       ))}
+  //     </List>
+  //   </Box>
+  // );
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -102,7 +102,7 @@ function Navigation({parentToChild, modeChange}: any) {
         </Toolbar>
       </AppBar>
       <nav>
-        <Drawer
+        {/*<Drawer
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
@@ -115,7 +115,7 @@ function Navigation({parentToChild, modeChange}: any) {
           }}
         >
           {drawer}
-        </Drawer>
+        </Drawer> */}
       </nav>
     </Box>
   );

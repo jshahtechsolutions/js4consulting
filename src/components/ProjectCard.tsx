@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <div className="project-card">
+        <div className="project-card" onClick={() => setIsOpen(true)}>
             <div>
                 {/* 🔗 Title & Icon linked together as an interactive row layout */}
                 <div className="project-header-link" onClick={() => setIsOpen(true)}>

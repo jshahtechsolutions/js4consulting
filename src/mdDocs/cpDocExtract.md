@@ -1,6 +1,7 @@
 # ✨ Turn Copilot Studio Prompts into a Document Extraction Service
 
-> A practical workaround for extracting text from SharePoint document attachments in Power Automate when AI Builder document processing is not available.
+> A practical workaround for extracting text from SharePoint document attachments in Power Automate
+when AI Builder document processing is not available.
 
 
 ---
@@ -131,7 +132,8 @@ Here is the extraction prompt pattern I used:
 ```text
 You are a document text extraction assistant.
 
-Your task is to extract and return all readable content from the uploaded document as accurately as possible.
+Your task is to extract and return all readable content from the uploaded document
+as accurately as possible.
 
 Instructions:
 
@@ -144,8 +146,10 @@ Instructions:
    - Numbered lists
    - Section titles
 3. Maintain the logical reading order of the document.
-4. Preserve dates, names, email addresses, phone numbers, URLs, identifiers, and special values exactly as written.
-5. If the document contains tables, convert tables to markdown format and preserve column names and row values.
+4. Preserve dates, names, email addresses, phone numbers, URLs, identifiers,
+   and special values exactly as written.
+5. If the document contains tables, convert tables to markdown format
+   and preserve column names and row values.
 6. If the document contains form fields, extract field names and values.
 7. If the document contains multiple pages, continue extraction across all pages.
 8. Do not summarize.
@@ -270,9 +274,13 @@ If you are building document-driven automations in Microsoft 365, **Copilot Stud
 ```text
 I found a practical workaround for document extraction in Power Automate.
 
-Instead of using AI Builder document processing, I used a Copilot Studio Prompt with Code Interpreter enabled to extract text from SharePoint document attachments and pass it into downstream AI workflows.
+Instead of using AI Builder document processing, I used a Copilot Studio Prompt
+with Code Interpreter enabled to extract text from SharePoint document attachments
+and pass it into downstream AI workflows.
 
-Simple, reusable, and useful for contracts, SOWs, policies, proposals, and other business documents.
+Simple, reusable, and useful for contracts, SOWs, policies, proposals, and other
+business documents.
 
-#CopilotStudio #PowerAutomate #PowerPlatform #SharePoint #Microsoft365 #AIAutomation
+#CopilotStudio #PowerAutomate #PowerPlatform #SharePoint
+#Microsoft365 #AIAutomation
 ```

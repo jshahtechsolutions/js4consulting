@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/js4consulting/static/css/main.c8bdbc44.css",
-    "main.js": "/js4consulting/static/js/main.abaaa211.js",
+    "main.css": "/js4consulting/static/css/main.7db268d2.css",
+    "main.js": "/js4consulting/static/js/main.b016b6c7.js",
     "static/js/453.7edf5af5.chunk.js": "/js4consulting/static/js/453.7edf5af5.chunk.js",
     "static/media/cpDocExtract.png": "/js4consulting/static/media/cpDocExtract.d0ccc8d7391753a6e7fd.png",
+    "static/media/githubActionForPages.jpg": "/js4consulting/static/media/githubActionForPages.17691522fc82ca332741.jpg",
     "static/media/bg-light.png": "/js4consulting/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/js4consulting/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/jcLinkProfl.png": "/js4consulting/static/media/jcLinkProfl.60b6ff431d3b52d02b9c.png",
-    "static/media/cpDocExtract.md": "/js4consulting/static/media/cpDocExtract.73fdfb7d2a6ee4c48838.md",
+    "static/media/cpDocExtract.md": "/js4consulting/static/media/cpDocExtract.c5ed2bec68fd130089a2.md",
+    "static/media/githubActionForPages.md": "/js4consulting/static/media/githubActionForPages.52d8db2082e2f54e9835.md",
     "static/media/PowerApps_scalable.svg": "/js4consulting/static/media/PowerApps_scalable.9a5f38da10c2f7b9f015b921271688ef.svg",
     "static/media/PowerPlatform_scalable.svg": "/js4consulting/static/media/PowerPlatform_scalable.7d8bbd39f7fbca9aed7a128153e2c8a2.svg",
     "static/media/PowerAutomate_scalable.svg": "/js4consulting/static/media/PowerAutomate_scalable.1fc4db1cf716c33bfbb2486255f6f810.svg",
@@ -15,12 +17,12 @@
     "static/media/azure-openai.svg": "/js4consulting/static/media/azure-openai.ce6e8027bd98691ebd3085e3b663e407.svg",
     "index.html": "/js4consulting/index.html",
     "static/media/langchain.svg": "/js4consulting/static/media/langchain.fa8dc96698e78ef4d7e9211a07be9950.svg",
-    "main.c8bdbc44.css.map": "/js4consulting/static/css/main.c8bdbc44.css.map",
-    "main.abaaa211.js.map": "/js4consulting/static/js/main.abaaa211.js.map",
+    "main.7db268d2.css.map": "/js4consulting/static/css/main.7db268d2.css.map",
+    "main.b016b6c7.js.map": "/js4consulting/static/js/main.b016b6c7.js.map",
     "453.7edf5af5.chunk.js.map": "/js4consulting/static/js/453.7edf5af5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8bdbc44.css",
-    "static/js/main.abaaa211.js"
+    "static/css/main.7db268d2.css",
+    "static/js/main.b016b6c7.js"
   ]
 }

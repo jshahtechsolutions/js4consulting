@@ -2,7 +2,7 @@
   "name": "js4consulting",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/js4consulting",
+  "homepage": "https://jshahtechsolutions.github.io/js4consulting",
   "dependencies": {
     "@devicon/react": "^0.0.3",
     "@emotion/react": "^11.11.4",
@@ -59,6 +59,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "gh-pages": "^6.3.0"
   }
 }

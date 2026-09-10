@@ -2,46 +2,46 @@
     {
         "id": 1,
         "title": "Social Security administration (SSA)",
-        "logo": "js4consulting/logos/ssa.png"
+        "logo": "/logos/ssa.png"
     },
     {
         "id": 2,
         "title": "Department of labor licensing and regulation (DLLR)",
-        "logo": "js4consulting/logos/DLLR.jpg"
+        "logo": "/logos/DLLR.jpg"
     },
     {
         "id": 3,
         "title": "RXNT",
-        "logo": "js4consulting/logos/RXNT.jpg"
+        "logo": "/logos/RXNT.jpg"
     },
     {
         "id": 4,
         "title": "Maryland Motor Vehicle Administration (MVA)",
-        "logo": "js4consulting/logos/MVA.png"
+        "logo": "/logos/MVA.png"
     },
     {
         "id": 5,
         "title": "Basys",
-        "logo": "js4consulting/logos/basys.png"
+        "logo": "/logos/basys.png"
     },
     {
         "id": 6,
         "title": "W.R.Grace",
-        "logo": "js4consulting/logos/grace.jpg"
+        "logo": "/logos/grace.jpg"
     },
     {
         "id": 7,
         "title": "U.S.Patent and Trademark Office (USPTO)",
-        "logo": "js4consulting/logos/USPTO.png"
+        "logo": "/logos/USPTO.png"
     },
     {
         "id": 8,
         "title": "Court Services and Offender Supervision Agency",
-        "logo": "js4consulting/logos/CSOSA.png"
+        "logo": "/logos/CSOSA.png"
     },
     {
         "id": 9,
         "title": "Verizon Communication",
-        "logo": "js4consulting/logos/Verizon.png"
+        "logo": "/logos/Verizon.png"
     }
 ]

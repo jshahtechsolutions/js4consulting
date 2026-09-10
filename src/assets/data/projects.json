@@ -74,20 +74,5 @@
       {"img":"js4consulting/PFS/PFS-Outlier.png","discription":"Outlier report identifies disability allownace rates that are signifcally higher or lower rates from most of the allowance rates within that application."},
       {"img":"js4consulting/PFS/PFS-PowerBI.png","discription":"Plocy Analysis Reports, PowerBI reports, that allows to compare initial level data sets with different filters before ad after policy change."}
     ]
-  },
-  {
-    "id": 4,
-    "title": "Task Analytics Dashboard",
-    "description": "A real-time productivity app visualizing team velocity and task distributions.",
-
-    "technologies": [
-      "React",
-      "Node.js",
-      "Chart.js",
-      "MongoDB"
-    ],
-    "screenshots": [
-      {"img":"../assets/images//project2-1.png","discription":""}
-    ]
   }
 ]

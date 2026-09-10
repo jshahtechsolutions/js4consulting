@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/js4consulting/static/css/main.c8bdbc44.css",
+    "main.js": "/js4consulting/static/js/main.abaaa211.js",
+    "static/js/453.7edf5af5.chunk.js": "/js4consulting/static/js/453.7edf5af5.chunk.js",
+    "static/media/cpDocExtract.png": "/js4consulting/static/media/cpDocExtract.d0ccc8d7391753a6e7fd.png",
+    "static/media/bg-light.png": "/js4consulting/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/js4consulting/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/jcLinkProfl.png": "/js4consulting/static/media/jcLinkProfl.60b6ff431d3b52d02b9c.png",
+    "static/media/cpDocExtract.md": "/js4consulting/static/media/cpDocExtract.73fdfb7d2a6ee4c48838.md",
+    "static/media/PowerApps_scalable.svg": "/js4consulting/static/media/PowerApps_scalable.9a5f38da10c2f7b9f015b921271688ef.svg",
+    "static/media/PowerPlatform_scalable.svg": "/js4consulting/static/media/PowerPlatform_scalable.7d8bbd39f7fbca9aed7a128153e2c8a2.svg",
+    "static/media/PowerAutomate_scalable.svg": "/js4consulting/static/media/PowerAutomate_scalable.1fc4db1cf716c33bfbb2486255f6f810.svg",
+    "static/media/openai-icon.svg": "/js4consulting/static/media/openai-icon.3e82e1779a9d06f93698390e3eec354c.svg",
+    "static/media/azure-openai.svg": "/js4consulting/static/media/azure-openai.ce6e8027bd98691ebd3085e3b663e407.svg",
+    "index.html": "/js4consulting/index.html",
+    "static/media/langchain.svg": "/js4consulting/static/media/langchain.fa8dc96698e78ef4d7e9211a07be9950.svg",
+    "main.c8bdbc44.css.map": "/js4consulting/static/css/main.c8bdbc44.css.map",
+    "main.abaaa211.js.map": "/js4consulting/static/js/main.abaaa211.js.map",
+    "453.7edf5af5.chunk.js.map": "/js4consulting/static/js/453.7edf5af5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8bdbc44.css",
+    "static/js/main.abaaa211.js"
+  ]
+}

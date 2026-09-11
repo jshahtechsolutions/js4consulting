@@ -16,7 +16,6 @@ code {
 .main-container {
   position: relative;
   background-color: #0d1116;
-
 }
 
 a {
@@ -65,7 +64,7 @@ p, a, h1, h2, h3, h4, h5, label, button, ul, li, hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //border: 1px solid var(--border-color, red);
+  /*border: 1px solid var(--border-color, red);*/
 }
 
 .header-image {
@@ -98,7 +97,7 @@ p, a, h1, h2, h3, h4, h5, label, button, ul, li, hr {
 }
 
 .light-mode {
-  background-color: #f8f9fa;
+    background-color: #f8f9fa;
 
   .navigation-bar {
     background-color: #f8f9fa;

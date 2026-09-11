@@ -20,7 +20,7 @@ const fullStackDevelopment = [
     "Python",
     "SQL",
     "PostgreSQL",
-    "Postman"
+    //"Postman"
 ];
 
 const labelCloud = [
@@ -87,7 +87,7 @@ function Expertise() {
                     </div>
                     <h3>DevOps & Automation</h3>
                     <ul>
-                        <li>Strong hands on Azure Deployments using CI/CD developments, Git Actions, Infrastructure as a code (Bicep).</li>
+                        <li>Strong hands on Azure Deployments using CI/CD developments, Git Actions, Infrastructure as a code (IaC) solutions.</li>
                         <li>Exposure with automated deployment scripts and execution.</li>
                     </ul>
                     <div className="flex-chips">

@@ -99,7 +99,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, project, onClose })
         {/* 🌟 2. Inner Frame: Safely holds the scrollbar away from parent borders */}
         <div className="modal-scroll-body">
           <h2>{project.title}</h2>
-
           {/* 📝 Sequential Top-to-Bottom Info Section */}
           <div className="modal-text-content">
             {project.details && (

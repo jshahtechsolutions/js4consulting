@@ -1,57 +1,63 @@
 .articles-container {
     display: flex;
     flex-direction: column;
-    padding: 0 0 5% 10%;
+    padding: 0 0 0% 10%;
     text-align: left;
     height:300px;
-    width: 100%; /* Ensure container takes full available screen space */
-    box-sizing: border-box
-}
-
-.articles-container .articles-grid {
-    display: grid;
-    padding: 0 0 5% 0%;
-    /* 1. FIX: Explicitly tell the grid to span 1 column filling 100% width */
-    grid-template-columns: 1fr;
-    row-gap: 24px;
-    width: 100%; /* Force the grid to match the container width */
+    width: 100%;
     box-sizing: border-box;
+
+    /* ADD THIS: Forces the element to wrap completely around all internal elements */
+    display: flow-root;
+    clear: both;
 }
 
-.articles-container .articles-grid .article {
+.carousel-wrapper {
+    padding: .5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 16px;
+    position: relative;
+    /*background-color: var(--card-bg, #ffffff);*/
+    /*border: 1px solid var(--border-color, red);*/
+    contain: layout;
+}
+
+.carousel-wrapper .article.active-slide {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Changed to flex-start so text aligns nicely at the top */
-    gap: 20px;               /* Clean spacing between image and markdown text */
+    align-items: flex-start;
+    gap: 25px;
     text-align: left;
-    /* border: 1px solid var(--border-color, red);*/
-    /* 2. FIX: Changed width to 100% so it perfectly fills the grid column */
-    width: 90%;
-
-     /* NEW: Fixed height and scrollable configurations */
-    height: 700px;           /* Adjust this value to your preferred fixed height */
-    overflow-y: auto;        /* Adds a vertical scrollbar only if content overflows */
+    border-radius: 10px;
+    background-color: var(--card-bg, #ffffff);
+    border: 1px solid var(--border-color, blue);
+    width: 100%;
+    height: 700px;
+    overflow-y: auto;
     overflow-x: hidden;
     box-sizing: border-box;
-    padding: 20px;
-
-    background-color: var(--card-bg, #ffffff);
+    padding: 10px;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     cursor: pointer;
+    float: none;
+    clear: both;
 }
 
 
-.articles-container .articles-grid .article:hover {
-    transform: translateY(-4px); /* Gently lifts card up */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08); /* Soft modern shadow */
+.carousel-wrapper .article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
     border-color: var(--border-hover-color, #b0b0b0);
 }
 
-.articles-container .articles-grid .article::-webkit-scrollbar {
+.carousel-wrapper .article::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* Safari and Chrome */
 }
-.articles-container .articles-grid .article {
+.carousel-wrapper .article {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
 }
@@ -60,27 +66,29 @@
     width:50%;
     height: auto;
     flex-shrink: 0;
-    position: sticky;        /* OPTIONAL: Keeps the image locked in place while text scrolls */
+    position: sticky;
     top: 0;
-    /* Interactive image zoom transition */
     transition: transform 0.3s ease;
 }
-.articles-container .articles-grid .article:hover img {
-    transform: scale(1.03); /* Subtle internal zoom when hovering anywhere on the card */
+.carousel-wrapper .article:hover img {
+    transform: scale(1.03);
 }
 
 .article .article-content {
    flex: 1;
-    min-width: 0; /* Keeps long words or blockquotes from breaking out horizontally */
+    min-width: 0;
     display: flex;
     flex-direction: column;
+
+
+    height: 100%;
+    overflow-y: scroll; /* Use 'scroll' to always show the track, or 'auto' to show it only when content overflows */
+    overflow-x: hidden;
 }
 
-
-/* Taming the default markdown margins inside the scrollbox */
 .article-content h1 {
     font-size: 1.5rem;
-    margin-top: 0;          /* Removes top gap so it aligns with image top */
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -94,12 +102,15 @@
     padding-left: 10px;
     border-left: 4px solid #ccc;
     font-style: italic;
-    color: #555;
 }
 
 .article-content p {
     margin: 0 0 10px 0;
     line-height: 1.5;
+}
+
+.article .article-content h1, h2, h3 , p, blockquote, ul, li {
+    color: #555;
 }
 .zoom {
     border-radius: 5px;
@@ -111,8 +122,38 @@
     transform: scale(1.05);
 }
 
+/* --- CAROUSEL BUTTONS STYLING --- */
+.carousel-btn {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #333333;
+    transform: scale(1.05);
+}
+
 @media screen {
     @media (max-width: 700px) {
+        .carousel-wrapper {
+            flex-direction: column-reverse; /* Put navigation arrows safely underneath the card on mobile screens */
+            gap: 12px;
+        }
         .articles-container {
             display: block;
             padding-left: 5%;
@@ -123,7 +164,7 @@
             display: block;
         }
 
-        .articles-container .articles-grid .article {
+        .articles-container .articles-grid .article.active-slide  {
             padding-bottom: 5%;
             flex-direction: column; /* Stack image vertically on top of text */
             height: auto; /* Remove the hard limit on mobile so it functions naturally */

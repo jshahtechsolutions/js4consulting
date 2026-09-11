@@ -21,10 +21,11 @@
       "AI Agent and Power Automate Integration"
     ],
     "screenshots": [
-      {"img":"js4consulting/NMSR/NMSR-1.png","discription":"This is main image"},
-      {"img":"js4consulting/NMSR/NMSR-2.png","discription":"This is secondary image"},
-      {"img":"js4consulting/NMSR/NMSR-3.png","discription":"This is main image"},
-      {"img":"js4consulting/NMSR/NMSR-4.png","discription":"This is main image"}
+      {"img":"js4consulting/NMSR/NMSR-1.png","discription":"This is main dashboard page with menu in left hand side section to choose from"},
+      {"img":"js4consulting/NMSR/NMSR-2.png","discription":"This is manage users screen where admin has the ability to add, delete users and provide access to the app"},
+      {"img":"js4consulting/NMSR/NMSR-3.png","discription":"This is the screen where admin can configure questions related to questions and ser other information."},
+      {"img":"js4consulting/NMSR/NMSR-4.png","discription":"This is main image"},
+      {"img":"js4consulting/NMSR/NMSR-5.png","discription":"This is review screen where reviewer can select the responses for their review assigned"}
     ]
   },
   {

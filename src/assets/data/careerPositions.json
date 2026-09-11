@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Sr. Software Engineer",
+        "logoImg": "/logos/ssa.png",
         "location": "Social Security Administration, SSA, Woodlawn, MD",
         "date": "2015 - present",
         "description": "Full-stack Web Development, PowerApps platform support and development, Automation and AI implementation",
@@ -12,8 +13,9 @@
             "Integrated Power Automate with Copilot Studio via REST-based connectors to enable AI-driven workflow automation",
             "Built an AI-powered document processing system to classify and extract structured data from PDF documents using OCR and LLM-based classification, applying RAG and LangChain concepts, with a React frontend",
             "Participated in Azure cloud migration and modernization as part of the Cloud Migration Center of Excellence (CoE) team",
-            "Implemented secure authentication and authorization using Azure AD and OAuth protocols",
-            "Implemented CI/CD pipelines and infrastructure-as-code using Azure DevOps to automate build, test, and release across environments",
+            "Implemented secure authentication and authorization using Azure AD and OAuth protocols. Managed Microsoft Entra ID (Azure AD) security groups to govern SharePoint permissions and provisioned guest/external-sharing access via Power Automate approval flows.",
+            "Implemented conditional access policies in Entra ID that enforce additional rules based on context for resource access.",
+            "Implemented CI/CD pipelines and infrastructure-as-code (IaC) solutions using Azure DevOps to automate build, test, and release across environments",
             "Converted legacy applications to modern platforms using Node.js, React, and ASP.NET Web API; designed RESTful backend microservices using Node.js and Express",
             "Participated in agile development of web application enhancements, including database design/modifications (SQL Server, Entity Framework), REST API development, and JavaScript framework integration (React, jQuery)",
             "Collaborated daily with team members and end clients through scrum meetings, bi-weekly code reviews, and POC development",
@@ -24,6 +26,7 @@
     {
         "id": 2,
         "title": "Software Consultant",
+        "logoImg": "/logos/DLLR.jpg",
         "location": "Department of Labor Licensing and Regulation, DLLR, Baltimore, MD",
         "date": "2014 - 2015",
         "description": "Asp.Net Web Development, MSSQL Database development",
@@ -37,6 +40,7 @@
     {
         "id": 13,
         "title": "Sr. Software Engineer",
+        "logoImg": "/logos/RXNT.jpg",
         "location": "RxNT, Annapolis, MD",
         "date": "2013 - 2014",
         "description": "Twilio API integration, SPA Web Apps Development",
@@ -48,6 +52,7 @@
     {
         "id": 4,
         "title": "Software Developer",
+        "logoImg": "/logos/MVA.jpg",
         "location": "Maryland State Motor Vehicle Administration, MVA, Glen Burnie, MD",
         "date": "2009 - 2013",
         "description": "Legacy application conversion to modern development framework, WCF Service Development",

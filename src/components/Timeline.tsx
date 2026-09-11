@@ -10,6 +10,7 @@ import careerPositions from '../assets/data/careerPositions.json';
 function Timeline() {
   interface careerPosition {
     title: string;
+    logoImg:string,
     date: string;
     location: string;
     description: string;
@@ -106,10 +107,18 @@ function Timeline() {
             {/* StopPropagation prevents clicking inside the article from closing it */}
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <header className="modal-header">
-                <h2>{activePosition.title}</h2>
-                <button className="close-btn" onClick={() => setIsOpen(false)}>&times;</button>
+                <div className="header-left-group">
+                  <div className="logo-container"><img src={process.env.PUBLIC_URL + activePosition.logoImg}></img></div>
+                  <div className="position-details"><h2>{activePosition.title}</h2>
+                  <span>{activePosition.location}</span></div>
+                </div>
+                <button className="modal-close-btn"onClick={() => setIsOpen(false)} aria-label="Close modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
               </header>
-              <h3 className="modal-subtitle">{activePosition.location}</h3>
               <hr></hr>
               <main className="modal-body prose">
                 <ul className="underline-list">

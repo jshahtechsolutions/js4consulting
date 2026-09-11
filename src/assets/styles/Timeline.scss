@@ -88,30 +88,66 @@
 
 .modal-header {
   padding: 1.25rem;
-  //border-bottom: 1px solid #eee;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: space-between; /* Pushes logo/title to left and close icon to far right */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.modal-header h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #000;
+.header-left-group {
+    display: flex;
+    align-items: flex-start;;
+    gap: 16px; /* Spacing between the logo and your position details text */
 }
 
+.logo-container {
+    display: flex;
+    align-items: flex-start;   /* Anchors content block to the top */
+    justify-content: flex-start;
+    flex-shrink: 0;
+     max-width: 120px;          /* Adjust this base value up or down depending on your logo */
+    width: 100%;
+}
+
+/* 3. THE LOGO ELEMENT: Scales exactly to 50% width/height of its source size */
+.logo-container img {
+   width: 50% !important;
+    height: auto !important;
+
+    /* Forces zero layout gaps at the top margin */
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+
+/* Text position details styling */
+.position-details {
+    display: flex;
+    flex-direction: column;
+}
+.position-details h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* 4. CLOSE BUTTON: Pushed to the far right natively by justify-content */
+.modal-close-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
 .modal-content hr {
   height: 2px;
   width: 100%;
   background: gray;
-}
-
-.modal-subtitle {
-  padding-left: 1.25rem;
-  margin: 0;
-  color: #666;
-  font-size: 0.9rem;
-  display: block;
 }
 
 .underline-list {
@@ -135,18 +171,6 @@
   /* Safely kills final divider line */
 }
 
-.close-btn {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #888;
-  line-height: 1;
-}
-
-.close-btn:hover {
-  color: #000;
-}
 
 /* Enable independent scrolling inside long articles */
 .modal-body {

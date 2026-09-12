@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/js4consulting/static/css/main.40d79918.css",
-    "main.js": "/js4consulting/static/js/main.272da945.js",
+    "main.css": "/js4consulting/static/css/main.0f7ebd74.css",
+    "main.js": "/js4consulting/static/js/main.146af8f5.js",
     "static/js/453.7edf5af5.chunk.js": "/js4consulting/static/js/453.7edf5af5.chunk.js",
     "static/media/cpDocExtract.png": "/js4consulting/static/media/cpDocExtract.d0ccc8d7391753a6e7fd.png",
     "static/media/githubActionForPages.jpg": "/js4consulting/static/media/githubActionForPages.17691522fc82ca332741.jpg",
@@ -17,12 +17,12 @@
     "static/media/azure-openai.svg": "/js4consulting/static/media/azure-openai.ce6e8027bd98691ebd3085e3b663e407.svg",
     "index.html": "/js4consulting/index.html",
     "static/media/langchain.svg": "/js4consulting/static/media/langchain.fa8dc96698e78ef4d7e9211a07be9950.svg",
-    "main.40d79918.css.map": "/js4consulting/static/css/main.40d79918.css.map",
-    "main.272da945.js.map": "/js4consulting/static/js/main.272da945.js.map",
+    "main.0f7ebd74.css.map": "/js4consulting/static/css/main.0f7ebd74.css.map",
+    "main.146af8f5.js.map": "/js4consulting/static/js/main.146af8f5.js.map",
     "453.7edf5af5.chunk.js.map": "/js4consulting/static/js/453.7edf5af5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40d79918.css",
-    "static/js/main.272da945.js"
+    "static/css/main.0f7ebd74.css",
+    "static/js/main.146af8f5.js"
   ]
 }

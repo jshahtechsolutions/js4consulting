@@ -90,11 +90,15 @@
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 10px;
+     word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .article-content h2 {
     font-size: 1.2rem;
     margin: 15px 0 10px 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .article-content blockquote {
@@ -102,15 +106,21 @@
     padding-left: 10px;
     border-left: 4px solid #ccc;
     font-style: italic;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .article-content p {
     margin: 0 0 10px 0;
     line-height: 1.5;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .article .article-content h1, h2, h3 , p, blockquote, ul, li {
     color: #555;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 .zoom {
     border-radius: 5px;
@@ -153,18 +163,21 @@
         .carousel-wrapper {
             flex-direction: column-reverse; /* Put navigation arrows safely underneath the card on mobile screens */
             gap: 12px;
+            width: 100%;
         }
         .articles-container {
             display: block;
             padding-left: 5%;
             padding-right: 5%;
+        height: auto;
         }
 
         .articles-container .articles-grid {
             display: block;
         }
 
-        .articles-container .articles-grid .article.active-slide  {
+        .carousel-wrapper .article.active-slide   {
+            display: flex;
             padding-bottom: 5%;
             flex-direction: column; /* Stack image vertically on top of text */
             height: auto; /* Remove the hard limit on mobile so it functions naturally */
@@ -175,6 +188,24 @@
             width: 100%; /* Image takes full width of the mobile card */
             position: relative; /* Release sticky layout for standard mobile block scrolling */
             top: initial;
+        }
+        .article .article-content{
+            height: auto !important;
+            flex: 1;
+            overflow-y: auto !important;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            padding-right: 8px;
+        }
+         .article-content h1 {
+            font-size: 1.25rem;
+        }
+        .article-content h2 {
+            font-size: 1.1rem;
+        }
+        .article-content p {
+            font-size: 0.95rem;
         }
     }
 }

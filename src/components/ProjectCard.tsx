@@ -31,20 +31,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 {/* 🔗 Title & Icon linked together as an interactive row layout */}
                 <div className="project-header-link" onClick={() => setIsOpen(true)}>
                 <h3>{project.title}</h3>
-                <svg
-                    className="info-icon"
-                    xmlns="http://w3.org"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
                 </div>
                 <p className="project-description">{project.description}</p>
 

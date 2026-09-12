@@ -27,12 +27,9 @@
 
     // 📱 Mobile First Layout (Single vertical list by default)
     .projects-grid {
-        // display: grid;
-        // grid-template-columns: 1fr;
-        // gap: 2rem;
         cursor: pointer;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         grid-gap: 50px;
 
         // 💻 Tablets & Desktops: Perfectly split side-by-side columns

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import cpDocExtract from '../assets/images/articles/cpDocExtract.png';
+import proxyutil from '../assets/images/articles/proxyutil.png';
 import githubActionForPages from '../assets/images/articles/githubActionForPages.jpg';
 import cpDocExtractUrl from '../mdDocs/cpDocExtract.md';
 import githubActionForPagesFileUrl from '../mdDocs/githubActionForPages.md';
+import proxyUtilFileUrl from '../mdDocs/proxyUtil.md';
 import '../assets/styles/Articles.scss';
 import JCMarkDown from '../components/JCMarkDown';
 function Articles() {
@@ -19,6 +21,12 @@ function Articles() {
             image: githubActionForPages,
             markdownUrl: githubActionForPagesFileUrl,
             alt: "Thumbnail 2"
+        },
+        {
+            id: 3,
+            image: proxyutil,
+            markdownUrl: proxyUtilFileUrl,
+            alt: "Thumbnail 3"
         }
     ];
 
